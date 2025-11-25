@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediAssit AI Chat</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="app-container">
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">MediAssit AI</div>
+        <button class="new-chat-btn" id="new-chat-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 5v14M5 12h14"/>
+          </svg>
+          New Chat
+        </button>
+      </div>
+
+      <div class="sidebar-content">
+        <div class="chat-history-section">
+          <div class="section-title">Recent</div>
+          <div id="chat-history">
+            <!-- Chat history items will be inserted here -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Header -->
+      <div class="header">
+        <button class="toggle-sidebar-btn" id="toggle-sidebar">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 12h18M3 6h18M3 18h18"/>
+          </svg>
+        </button>
+        <div class="header-title" id="current-chat-title">New Chat</div>
+      </div>
+
+      <!-- Chat container -->
+      <div id="chat-container">
+        <div class="messages-wrapper">
+          <!-- Messages will be inserted here -->
+        </div>
+      </div>
+
+      <!-- Input -->
+      <div class="input-container">
+        <div class="input-wrapper">
+          <input 
+            id="user-input" 
+            type="text" 
+            placeholder="Ask anything..."
+          />
+          <button id="send-btn">
+            Send
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

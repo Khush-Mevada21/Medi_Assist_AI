@@ -1,0 +1,61 @@
+
+test.py
+demo.py
+
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pkl
+*.env
+*.venv/
+venv/
+env/
+ENV/
+
+# Pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Distribution / packaging
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+sdist/
+develop-eggs/
+*.manifest
+*.spec
+
+# Installer logs
+*.log
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# FastAPI / Chroma DB
+chroma_db/
+
+# Node / JS / Tailwind
+node_modules/
+*.js.map
+*.css.map
+
+# Temporary files
+*.swp
+*.tmp
+*.bak
+*.orig
+
+# Others
+*.sqlite3
