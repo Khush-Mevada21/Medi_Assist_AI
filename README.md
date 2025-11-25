@@ -34,6 +34,5 @@ A web-based AI-powered chat application that answers medical questions related t
 - **LocalStorage** – persistent chat history on browser
 - **Responsive design** – mobile-friendly chat interface
 
----
 
 
